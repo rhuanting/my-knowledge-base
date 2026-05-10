@@ -14,7 +14,11 @@
 
 ```text
 00_Inbox                 临时收集：随手记、未整理想法
-01_Journal               日记
+01_Journal               日记、周记、月度总结、年度总结
+01_Journal/Daily         日记
+01_Journal/Weekly        周记
+01_Journal/Monthly       月度总结
+01_Journal/Yearly        年度总结
 02_Tasks                 任务、待办、计划
 03_Projects              有明确目标和结束条件的项目
 04_Areas                 长期经营的领域
@@ -29,13 +33,14 @@ _Templates               Obsidian 模板
 ## 内容流转
 
 1. 捕捉：所有不确定的新内容先放入 `00_Inbox`。
-2. 记录：日常事件、情绪、见闻、身体状态写入 `01_Journal`。
+2. 记录：日常事件、情绪、见闻、身体状态写入 `01_Journal/Daily`。
 3. 行动：明确要做的事情进入 `02_Tasks` 或相关项目页。
 4. 推进：有结果、有截止、有阶段的事情进入 `03_Projects`。
 5. 维护：健康、关系、财务、工作等长期主题进入 `04_Areas`。
 6. 提炼：值得长期保存的观点改写为 `05_Notes` 中的独立笔记。
 7. 连接：跨主题的索引用 `07_Maps` 组织，而不是创建过深目录。
-8. 归档：完成、过期、暂缓的内容移动到 `90_Archive`。
+8. 复盘：每周、每月、每年分别写入 `01_Journal/Weekly`、`01_Journal/Monthly`、`01_Journal/Yearly`。
+9. 归档：完成、过期、暂缓的内容移动到 `90_Archive`。
 
 ## 目录用法
 
@@ -53,13 +58,22 @@ _Templates               Obsidian 模板
 
 ### `01_Journal`
 
-用于日记。建议按年份存放，文件名使用日期：
+用于日记、周记、月度总结和年度总结。建议按类型和年份存放：
 
 ```text
-01_Journal/2026/2026-05-10.md
+01_Journal/Daily/2026/2026-05-10.md
+01_Journal/Weekly/2026/2026-W19 周记.md
+01_Journal/Monthly/2026/2026-05 月度总结.md
+01_Journal/Yearly/2026/2026 年度总结.md
 ```
 
 日记可以包含当天事件、情绪、身体状态、反思、任务和链接。日记不是终点，里面有价值的思想应提炼到 `05_Notes`。
+
+周记用于把最近 7 天重新看一遍，重点回答：本周发生了什么、推进了什么、卡住了什么、下周要做什么。
+
+月度总结用于观察更大的趋势，重点回答：本月主题是什么、项目和领域有什么变化、哪些想法值得沉淀。
+
+年度总结用于形成个人叙事，重点回答：这一年我经历了什么、成为了什么样的人、明年要把生命投入到哪里。
 
 ### `02_Tasks`
 
@@ -171,6 +185,7 @@ _Templates               Obsidian 模板
 #type/book
 #type/note
 #type/map
+#type/review
 ```
 
 状态：
@@ -180,6 +195,14 @@ _Templates               Obsidian 模板
 #status/active
 #status/done
 #status/archive
+```
+
+复盘周期：
+
+```text
+#review/weekly
+#review/monthly
+#review/yearly
 ```
 
 主题：
@@ -197,7 +220,9 @@ _Templates               Obsidian 模板
 ## 命名规范
 
 - 日记：`YYYY-MM-DD.md`
+- 周记：`YYYY-Www 周记.md`，例如 `2026-W19 周记.md`
 - 月度复盘：`YYYY-MM 月度复盘.md`
+- 年度总结：`YYYY 年度总结.md`
 - 项目：使用清楚的项目名，例如 `建立个人知识库.md`
 - 永久笔记：使用观点句或问题句，例如 `赚钱的本质是价值交换.md`
 - 主题地图：使用简短主题名，例如 `爱.md`
@@ -208,24 +233,52 @@ _Templates               Obsidian 模板
 
 1. 清空或减少 `00_Inbox`。
 2. 回看最近 7 天日记。
-3. 把待办移动到 `02_Tasks` 或相关项目。
-4. 把有长期价值的想法改写成 `05_Notes`。
-5. 给新笔记补充双链。
-6. 更新相关 `07_Maps`。
-7. 把完成或暂缓内容归档到 `90_Archive`。
+3. 写一篇 `01_Journal/Weekly/YYYY/YYYY-Www 周记.md`。
+4. 把待办移动到 `02_Tasks` 或相关项目。
+5. 把有长期价值的想法改写成 `05_Notes`。
+6. 给新笔记补充双链。
+7. 更新相关 `07_Maps`。
+8. 把完成或暂缓内容归档到 `90_Archive`。
+
+## 月度总结流程
+
+每月月底或次月第一天做一次：
+
+1. 回看本月所有周记。
+2. 检查项目推进、领域状态、关系、健康、财务和学习。
+3. 写一篇 `01_Journal/Monthly/YYYY/YYYY-MM 月度总结.md`。
+4. 选出本月最重要的 3 到 5 个判断，提炼为永久笔记。
+5. 更新相关主题地图。
+
+## 年度总结流程
+
+每年年底或次年年初做一次：
+
+1. 回看 12 篇月度总结。
+2. 整理这一年的重大事件、变化、遗憾和感谢。
+3. 写一篇 `01_Journal/Yearly/YYYY/YYYY 年度总结.md`。
+4. 更新人生问题、工作、生活、赚钱、爱、死亡等主题地图。
+5. 确定下一年的重点项目和长期领域方向。
 
 ## Obsidian 建议设置
 
 - 将本目录作为一个 Vault 打开。
-- Daily Notes 目录设置为 `01_Journal/YYYY`，文件名使用 `YYYY-MM-DD`。
+- Daily Notes 目录设置为 `01_Journal/Daily/YYYY`，文件名使用 `YYYY-MM-DD`。
 - 附件默认位置设置为 `99_Attachments`。
 - 模板目录设置为 `_Templates`。
 - 优先使用双链 `[[笔记名]]` 连接内容。
+- 如果安装 Obsidian 的 Periodic Notes 或 Calendar 社区插件，建议设置：
+  - Weekly Notes：`01_Journal/Weekly/YYYY`，格式 `GGGG-[W]WW 周记`
+  - Monthly Notes：`01_Journal/Monthly/YYYY`，格式 `YYYY-MM 月度总结`
+  - Yearly Notes：`01_Journal/Yearly/YYYY`，格式 `YYYY 年度总结`
 
 ## 判断一条内容放在哪里
 
 - 不知道放哪：`00_Inbox`
-- 今天发生的：`01_Journal`
+- 今天发生的：`01_Journal/Daily`
+- 一周回顾：`01_Journal/Weekly`
+- 一月回顾：`01_Journal/Monthly`
+- 一年回顾：`01_Journal/Yearly`
 - 需要行动：`02_Tasks`
 - 有明确结果：`03_Projects`
 - 长期经营：`04_Areas`
@@ -233,4 +286,3 @@ _Templates               Obsidian 模板
 - 外部资料和摘录：`06_Resources`
 - 主题导航：`07_Maps`
 - 已结束或暂不处理：`90_Archive`
-
