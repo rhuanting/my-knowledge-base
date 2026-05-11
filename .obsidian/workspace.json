@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Journal/2026/2026-05-10.md",
+                "file": "00_Inbox/电商 Agent 写功能设计.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-10"
+              "title": "电商 Agent 写功能设计"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_Journal/2026/2026-05-10.md",
+                "file": "00_Inbox/电商 Agent 写功能设计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2026-05-10 的反向链接列表"
+              "title": "电商 Agent 写功能设计 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_Journal/2026/2026-05-10.md",
+                "file": "00_Inbox/电商 Agent 写功能设计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2026-05-10 的出链列表"
+              "title": "电商 Agent 写功能设计 的出链列表"
             }
           },
           {
@@ -169,6 +169,8 @@
   },
   "active": "d25254c206e6b46f",
   "lastOpenFiles": [
+    "01_Journal/2026/2026-05-10.md",
+    "00_Inbox/电商 Agent 写功能设计.md",
     "01_Journal/Yearly/2026/2026 年度总结.md",
     "01_Journal/Monthly/2026/2026-05 月度总结.md",
     "01_Journal/Weekly/2026/2026-W19 周记.md",
@@ -183,7 +185,6 @@
     "01_Journal/Monthly/2026",
     "01_Journal/Monthly",
     "01_Journal/Weekly",
-    "01_Journal/Daily",
-    "01_Journal/2026/2026-05-10.md"
+    "01_Journal/Daily"
   ]
 }
