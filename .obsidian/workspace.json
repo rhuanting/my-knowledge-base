@@ -11,14 +11,10 @@
             "id": "d25254c206e6b46f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_Inbox/电商 Agent 写功能设计.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "电商 Agent 写功能设计"
+              "title": "新标签页"
             }
           }
         ]
@@ -167,8 +163,16 @@
       "bases:新建数据库": false
     }
   },
-  "active": "d25254c206e6b46f",
+  "active": "aeb8f80ec3642092",
   "lastOpenFiles": [
+    "_Templates/产品 Inception 模板.md",
+    "_Templates/AI Agent Inception 框架模板.md",
+    "00_Inbox/产品 Inception 模板.md",
+    "00_Inbox/AI Agent Inception 框架模板.md",
+    "00_Inbox/如何开发一个agent.md~",
+    "00_Inbox/如何开发一个agent.md",
+    "03_Projects/work/业务领域Agent搭建/电商 Agent 写功能设计.md",
+    "03_Projects/work/业务领域Agent搭建",
     "01_Journal/2026/2026-05-10.md",
     "00_Inbox/电商 Agent 写功能设计.md",
     "01_Journal/Yearly/2026/2026 年度总结.md",
